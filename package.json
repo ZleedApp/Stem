@@ -1,6 +1,6 @@
 {
   "name": "@zleedapp/stem",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Zleed's UI component library for React/Next.js.",
   "repository": "https://github.com/ZleedApp/Stem.git",
   "homepage": "https://docs.zleed.tv/ui/stem",
