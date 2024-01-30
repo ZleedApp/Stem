@@ -1,24 +1,50 @@
-button {
-  display: inline-flex;
-  padding: 6px 12px;
-  justify-content: center;
+.btn {
+  display: flex;
+
   align-items: center;
+
   gap: 6px;
-
-  color: #fff;
-  background: #6467F2;
-
-  border: 1px transparent;
-  border-radius: 6px;
-
-  box-shadow: 0 2px 4px 0 rgba(100, 103, 242, 0.25);
+  padding: 6px 12px;
 
   font-family: 'Outfit', sans-serif;
+
   font-size: 16px;
+  font-weight: 500;
+
+  border: 2px solid transparent;
+  border-radius: 6px;
 
   cursor: pointer;
 
-  transition: filter 0.2s;
+  transition: 150ms;
+
+  &.outlined {
+    border: 2px solid transparent;
+  }
+
+  &[data-color='primary'] {
+    background: #6467F2;
+    color: #fff;
+
+    &.outlined {
+      background: transparent;
+      color: #6467F2;
+
+      border-color: rgba(#6467F2, 0.2);
+    }
+  }
+
+  &[data-color='red'] {
+    background: #F26464;
+    color: #fff;
+
+    &.outlined {
+      background: transparent;
+      color: #F26464;
+
+      border-color: rgba(#F26464, 0.30);
+    }
+  }
 
   &:hover {
     filter: brightness(0.9);
