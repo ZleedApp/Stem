@@ -1,0 +1,20 @@
+.chip {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+  padding: 6px 12px;
+
+  font-family: 'Outfit', sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  max-width: fit-content;
+
+  background: #F3F6FF;
+
+  border-radius: 22px;
+  border: 1px solid rgba(161, 163, 247, 0.30);
+}

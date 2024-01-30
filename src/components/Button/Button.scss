@@ -31,6 +31,10 @@
       color: #6467F2;
 
       border-color: rgba(#6467F2, 0.2);
+
+      &:hover {
+        background: rgba(#6467F2, 0.2);
+      }
     }
   }
 
@@ -42,11 +46,19 @@
       background: transparent;
       color: #F26464;
 
-      border-color: rgba(#F26464, 0.30);
+      border-color: rgba(#F26464, 0.3);
+
+      &:hover {
+        background: rgba(#F26464, 0.2);
+      }
     }
   }
 
   &:hover {
     filter: brightness(0.9);
+
+    &.outlined {
+      filter: none;
+    }
   }
 }

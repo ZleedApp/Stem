@@ -16,7 +16,7 @@ const meta: Meta<typeof Button> = {
   args: {
     label: 'Button',
     outlined: false,
-    icon: Info,
+    icon: Command,
     color: 'primary'
   }
 };
