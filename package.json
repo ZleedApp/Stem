@@ -3,7 +3,7 @@
   "version": "0.0.2",
   "description": "Zleed's UI component library for React/Next.js.",
   "repository": "https://github.com/ZleedApp/Stem.git",
-  "homepage": "https://docs.zleed.tv/ui/stem",
+  "homepage": "https://stem.zleed.tv",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -11,23 +11,41 @@
   ],
   "types": "dist/index.d.ts",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build --docs",
+    "serve-storybook": "serve storybook-static"
   },
   "keywords": [],
   "author": "TheClashFruit, Myadeleines",
   "license": "MIT",
+  "dependencies": {
+    "@storybook/preset-scss": "^1.0.3",
+    "lucide-react": "^0.319.0"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-interactions": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-onboarding": "1.0.11",
+    "@storybook/blocks": "^7.6.10",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-webpack5": "^7.6.10",
+    "@storybook/test": "^7.6.10",
     "@types/react": "^18.2.48",
     "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "react": "^18.2.0",
+    "react-dom": "18.2.0",
     "rollup": "^4.9.6",
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.70.0",
+    "storybook": "^7.6.10",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3"
   },

@@ -16,5 +16,8 @@
       "error",
       "always"
     ]
-  }
+  },
+  "extends": [
+    "plugin:storybook/recommended"
+  ]
 }
