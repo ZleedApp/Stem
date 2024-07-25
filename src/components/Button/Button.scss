@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .btn {
   display: flex;
 
@@ -6,7 +8,7 @@
   gap: 6px;
   padding: 6px 12px;
 
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 
   font-size: 16px;
   font-weight: 500;
@@ -22,34 +24,82 @@
     border: 2px solid transparent;
   }
 
-  &[data-color='primary'] {
-    background: #6467F2;
+  &[data-color="primary"] {
+    background: #6467f2;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: #6467F2;
+      color: #6467f2;
 
-      border-color: rgba(#6467F2, 0.2);
+      border-color: rgba(#6467f2, 0.2);
 
       &:hover {
-        background: rgba(#6467F2, 0.2);
+        background: rgba(#6467f2, 0.2);
       }
     }
   }
 
-  &[data-color='red'] {
-    background: #F26464;
+  &[data-color="red"] {
+    background: $generic-red;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: #F26464;
+      color: $generic-red;
 
-      border-color: rgba(#F26464, 0.3);
+      border-color: rgba($generic-red, 0.3);
 
       &:hover {
-        background: rgba(#F26464, 0.2);
+        background-color: rgba($generic-red, 0.2);
+      }
+    }
+  }
+
+  &[data-color="yellow"] {
+    background: $generic-yellow;
+    color: #fff;
+
+    &.outlined {
+      background: transparent;
+      color: $generic-yellow;
+
+      border-color: rgba($generic-yellow, 0.3);
+
+      &:hover {
+        background: rgba($generic-yellow, 0.2);
+      }
+    }
+  }
+
+  &[data-color="green"] {
+    background: $generic-green;
+    color: #fff;
+
+    &.outlined {
+      background: transparent;
+      color: $generic-green;
+
+      border-color: rgba($generic-green, 0.3);
+
+      &:hover {
+        background: rgba($generic-green, 0.2);
+      }
+    }
+  }
+
+  &[data-color="blue"] {
+    background: $generic-blue;
+    color: #fff;
+
+    &.outlined {
+      background: transparent;
+      color: $generic-blue;
+
+      border-color: rgba($generic-blue, 0.3);
+
+      &:hover {
+        background: rgba($generic-blue, 0.2);
       }
     }
   }
