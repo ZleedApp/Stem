@@ -6,16 +6,22 @@ import { Command, LucideIcon } from "lucide-react";
 
 export interface ButtonProps {
   label: string;
-  outlined: boolean;
+  style: "full" | "outlined";
   icon: LucideIcon;
+  iconOnLeft: boolean;
+  size: 24 | 32 | 48;
   color: "primary" | "red" | "yellow" | "green" | "blue";
 }
 
 const Button = (props: ButtonProps) => {
   return (
     <button
-      className={props.outlined ? "btn outlined" : "btn"}
+      className={`btn ${props.style}`}
       data-color={props.color}
+      style={{
+        fontSize: `${(props.size || 32) / 32}em`,
+        flexDirection: props.iconOnLeft ? "row-reverse" : "row"
+      }}
     >
       <span className="text">{props.label}</span>
       {props.icon ? (
