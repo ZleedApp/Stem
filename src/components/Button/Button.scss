@@ -19,16 +19,20 @@
   border-radius: 0.375em;
 
   cursor: pointer;
-  
+
   svg {
     height: 1em;
     width: 1em;
     stroke-width: 2.5;
   }
 
-  &:not(:hover) { transition-duration: 0.32s }
-  &:hover       { transition-duration: 0.16s }
-  &:active      {
+  &:not(:hover) {
+    transition-duration: 0.32s;
+  }
+  &:hover {
+    transition-duration: 0.16s;
+  }
+  &:active {
     transition-duration: 0.04s;
     transition-timing-function: linear;
   }
@@ -63,90 +67,90 @@
     }
 
     &:active {
-      filter: brightness(0.75)
-    } 
+      filter: brightness(0.75);
+    }
   }
 
   &[data-color="primary"] {
-    background: #6467f2;
+    background: $color-brand;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: #6467f2;
+      color: $color-brand;
 
-      border-color: rgba(#6467f2, 0.2);
+      border-color: rgba($color-brand, 0.2);
 
       &:hover {
-        background: rgba(#6467f2, 0.2);
+        background: rgba($color-brand, 0.2);
       }
     }
   }
 
   &[data-color="red"] {
-    --box-shadow-color: #{rgba($generic-red, 0.25)};
-    background: $generic-red;
+    --box-shadow-color: #{rgba($accent-crimson-2, 0.25)};
+    background: $accent-crimson-2;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: $generic-red;
+      color: $accent-crimson-2;
 
-      border-color: rgba($generic-red, 0.3);
+      border-color: rgba($accent-crimson-2, 0.3);
 
       &:hover {
-        background-color: rgba($generic-red, 0.2);
+        background-color: rgba($accent-crimson-2, 0.2);
       }
     }
   }
 
   &[data-color="yellow"] {
-    --box-shadow-color: #{rgba($generic-yellow, 0.25)};
-    background: $generic-yellow;
+    --box-shadow-color: #{rgba($accent-yellow-2, 0.25)};
+    background: $accent-yellow-2;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: $generic-yellow;
+      color: $accent-yellow-2;
 
-      border-color: rgba($generic-yellow, 0.3);
+      border-color: rgba($accent-yellow-2, 0.3);
 
       &:hover {
-        background: rgba($generic-yellow, 0.2);
+        background: rgba($accent-yellow-2, 0.2);
       }
     }
   }
 
   &[data-color="green"] {
-    --box-shadow-color: #{rgba($generic-green, 0.25)};
-    background: $generic-green;
+    --box-shadow-color: #{rgba($accent-teal-1, 0.25)};
+    background: $accent-teal-1;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: $generic-green;
+      color: $accent-teal-1;
 
-      border-color: rgba($generic-green, 0.3);
+      border-color: rgba($accent-teal-1, 0.3);
 
       &:hover {
-        background: rgba($generic-green, 0.2);
+        background: rgba($accent-teal-1, 0.2);
       }
     }
   }
 
   &[data-color="blue"] {
-    --box-shadow-color: #{rgba($generic-blue, 0.25)};
-    background: $generic-blue;
+    --box-shadow-color: #{rgba($accent-azure-2, 0.25)};
+    background: $accent-azure-2;
     color: #fff;
 
     &.outlined {
       background: transparent;
-      color: $generic-blue;
+      color: $accent-azure-2;
 
-      border-color: rgba($generic-blue, 0.3);
+      border-color: rgba($accent-azure-2, 0.3);
 
       &:hover {
-        background: rgba($generic-blue, 0.2);
+        background: rgba($accent-azure-2, 0.2);
       }
     }
   }

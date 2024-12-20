@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.container {
+.avatar-container {
   border-radius: 9999px;
   display: flex;
   flex-direction: column;
@@ -24,8 +24,19 @@
 }
 
 .outlined {
-  border-color: mix($brand-indigo, #ffffff, 35%);
+  &[data-style="live"] {
+    border: 2px solid rgba($accent-purple-2, 0.4);
+  }
+
+  &[data-style="rediff"] {
+    border: 2px solid rgba($accent-orange-2, 0.4);
+  }
+
+  &[data-style="offline"] {
+    border: 2px solid $surface-white-4;
+  }
 }
+
 .generic {
-  background-color: $brand-indigo;
+  background-color: $surface-black-5;
 }

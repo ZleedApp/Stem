@@ -15,15 +15,30 @@ const meta: Meta<typeof Avatar> = {
 
 type Story = StoryObj<typeof Avatar>;
 
-export const Regular: Story = {
+export const Clear: Story = {
   args: {
     outline: false,
   },
 };
 
-export const Outlined: Story = {
+export const Live: Story = {
   args: {
     outline: true,
+    style: "live",
+  },
+};
+
+export const Rediff: Story = {
+  args: {
+    outline: true,
+    style: "rediff",
+  },
+};
+
+export const Offline: Story = {
+  args: {
+    outline: true,
+    style: "offline",
   },
 };
 

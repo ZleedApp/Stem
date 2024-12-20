@@ -18,4 +18,78 @@ $brand-green: #10b981;
 $brand-amber: #f59e0b;
 $brand-red: #ef4444;
 
-/* Could someone make sure to update this place when an actual final colour pallete is created? */
+// 'Design System' pallete
+
+$accent-teal-base: #00dac0;
+$accent-teal-0: mix(black, $accent-teal-base, 40%);
+$accent-teal-1: mix(black, $accent-teal-base, 20%);
+$accent-teal-2: mix(black, $accent-teal-base, 0%);
+$accent-teal-3: mix(white, $accent-teal-base, 30%);
+$accent-teal-4: mix(white, $accent-teal-base, 60%);
+$accent-teal-5: mix(white, $accent-teal-base, 90%);
+
+$accent-azure-base: #5a94ff;
+$accent-azure-0: mix(black, $accent-azure-base, 40%);
+$accent-azure-1: mix(black, $accent-azure-base, 20%);
+$accent-azure-2: mix(black, $accent-azure-base, 0%);
+$accent-azure-3: mix(white, $accent-azure-base, 20%);
+$accent-azure-4: mix(white, $accent-azure-base, 40%);
+$accent-azure-5: mix(white, $accent-azure-base, 80%);
+
+$accent-brand-base: #6366f1;
+$accent-brand-0: mix(black, $accent-brand-base, 40%);
+$accent-brand-1: mix(black, $accent-brand-base, 20%);
+$accent-brand-2: mix(black, $accent-brand-base, 0%);
+$accent-brand-3: mix(white, $accent-brand-base, 20%);
+$accent-brand-4: mix(white, $accent-brand-base, 40%);
+$accent-brand-5: mix(white, $accent-brand-base, 80%);
+
+$accent-purple-base: #8b5cf6;
+$accent-purple-0: mix(black, $accent-purple-base, 40%);
+$accent-purple-1: mix(black, $accent-purple-base, 20%);
+$accent-purple-2: mix(black, $accent-purple-base, 0%);
+$accent-purple-3: mix(white, $accent-purple-base, 20%);
+$accent-purple-4: mix(white, $accent-purple-base, 40%);
+$accent-purple-5: mix(white, $accent-purple-base, 80%);
+
+$accent-crimson-base: #ff5370;
+$accent-crimson-0: mix(black, $accent-crimson-base, 40%);
+$accent-crimson-1: mix(black, $accent-crimson-base, 20%);
+$accent-crimson-2: mix(black, $accent-crimson-base, 0%);
+$accent-crimson-3: mix(white, $accent-crimson-base, 20%);
+$accent-crimson-4: mix(white, $accent-crimson-base, 40%);
+$accent-crimson-5: mix(white, $accent-crimson-base, 80%);
+
+$accent-orange-base: #ff9040;
+$accent-orange-0: mix(black, $accent-orange-base, 40%);
+$accent-orange-1: mix(black, $accent-orange-base, 20%);
+$accent-orange-2: mix(black, $accent-orange-base, 0%);
+$accent-orange-3: mix(white, $accent-orange-base, 20%);
+$accent-orange-4: mix(white, $accent-orange-base, 40%);
+$accent-orange-5: mix(white, $accent-orange-base, 80%);
+
+$accent-yellow-base: #ffcc40;
+$accent-yellow-0: mix(black, $accent-yellow-base, 40%);
+$accent-yellow-1: mix(black, $accent-yellow-base, 20%);
+$accent-yellow-2: mix(black, $accent-yellow-base, 0%);
+$accent-yellow-3: mix(white, $accent-yellow-base, 20%);
+$accent-yellow-4: mix(white, $accent-yellow-base, 40%);
+$accent-yellow-5: mix(white, $accent-yellow-base, 80%);
+
+// Surface & Text
+
+$surface-white-base: $accent-brand-1;
+$surface-white-0: mix(white, $surface-white-base, 95%);
+$surface-white-1: mix(white, $surface-white-base, 90%);
+$surface-white-2: mix(white, $surface-white-base, 83%);
+$surface-white-3: mix(white, $surface-white-base, 75%);
+$surface-white-4: mix(white, $surface-white-base, 68%);
+$surface-white-5: mix(white, $surface-white-base, 60%);
+
+$surface-black-base: $accent-brand-2;
+$surface-black-0: mix(#262626, #2e32ff, 90%);
+$surface-black-1: mix(#262626, $surface-black-base, 83%);
+$surface-black-2: mix(#262626, $accent-brand-2, 77%);
+$surface-black-3: mix(#262626, $accent-brand-2, 70%);
+$surface-black-4: mix(#262626, $accent-brand-2, 60%);
+$surface-black-5: mix(#262626, $accent-brand-2, 50%);

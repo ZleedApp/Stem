@@ -1,0 +1,122 @@
+@import "../../global.scss";
+
+.external {
+  padding: 6px;
+  width: fit-content;
+  height: fit-content;
+
+  div.container {
+    width: 320px;
+    height: 212px;
+
+    border-radius: 6px;
+    border: 2px solid mix($surface-white-2, #e1e2f5);
+
+    background-color: $surface-white-3;
+    overflow: hidden;
+
+    img.preview {
+      position: relative;
+      z-index: 0;
+      top: -74px;
+      width: 320px;
+      height: 180px;
+    }
+
+    .preview-blank {
+      position: relative;
+      top: -74px;
+      width: 320px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $surface-white-0;
+    }
+
+    .content-status {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: fit-content;
+      height: fit-content;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 3px;
+
+      .content-view-count {
+        padding: 1px 5px 1px 5px;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3px;
+
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.64px;
+
+        background-color: $surface-white-2;
+        color: $surface-black-4;
+
+        .icon {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    .details {
+      position: relative;
+      z-index: 1;
+      width: 320px;
+      height: 74px;
+      top: 138px;
+
+      background: linear-gradient(
+        180deg,
+        rgba($surface-white-1, 0) 0%,
+        rgba($surface-white-1, 0.75) 25.25%,
+        rgba($surface-white-1, 1) 50%
+      );
+
+      .avatar-box {
+        display: block;
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 4px;
+        left: 6px;
+        border-radius: 37px;
+      }
+
+      .channel-name {
+        position: absolute;
+        width: fit-content;
+        top: 18px;
+        left: 70px;
+
+        font-family: "Outfit", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .content-title {
+        position: absolute;
+        width: fit-content;
+        top: 33px;
+        left: 70px;
+        color: $surface-black-2;
+
+        font-family: "Outfit", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15.4px;
+      }
+    }
+  }
+}

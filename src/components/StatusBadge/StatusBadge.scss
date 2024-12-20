@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.badge-container {
+  background-color: red;
+  width: fit-content;
+  height: fit-content;
+  padding: 1px 5px 1px 5px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+
+  .content {
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.64px;
+  }
+
+  .icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  &[data-style="live"] {
+    background-color: $accent-purple-2;
+    color: white;
+  }
+
+  &[data-style="rediff"] {
+    background-color: $accent-orange-2;
+    color: white;
+  }
+
+  &[data-style="offline"] {
+    background-color: $surface-white-2;
+    color: $surface-black-4;
+  }
+}
